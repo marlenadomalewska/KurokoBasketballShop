@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sklep Koszykarski Kuroko</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        
+
+        <link rel="icon" href="images/ikona.png">
+    </head>
+    <body>
+        <header>
+
+            <a  href="Main.html"><img src="images/logo.png" alt="Logo"></a>
+
+          <div class="column2">
+                <h1 class="header-text"><b>Sklep Koszykarski Kuroko</b></h1>
+                
+                    <a class="logowanie"  id="logowanie" href="Login.html">Logowanie</a>
+                
+            </div>
+
+
+        </header>
+        <nav class="nav">
+            <a class="nav-link active" aria-current="page" href="Main.html">Strona główna</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Produkty</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="PilkaS.html">Piłka S</a></li>
+                  <li><a class="dropdown-item" href="PilkaM.html">Piłka M</a></li>
+                  <li><a class="dropdown-item" href="PilkaL.html">Piłka L</a></li>
+                </ul>
+              </li>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="Cart.html" id="iloscKoszyk">Koszyk: 0</a>
+                </li>
+                </ul>
+              
+        </nav> 
+
+        <main>
+            <h2><b>KOSZYK</b></h2>
+            <table class="table table-hover">
+                <thead>
+                    <th scope="col">Produkt</th>
+                    <th scope="col">Ilość</th>
+                    <th scope="col" style="width: 180px;">Cena</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a  href="PilkaS.html"><img src="images/pilkaSmini.png" width="50" height="50"></a>Piłka S</th>
+                        <td style="padding-top: 16px;">
+                          <div class="btn-group btn-group-sm" id="usunS"><button type="submit" class="btn btn-primary">-</button></div> <p id="iloscS">0</p>
+                          <div class="btn-group btn-group-sm" id="dodajS">
+                            <button type="submit" class="btn btn-primary">+</button>
+                           </div> 
+                          
+                        </td>
+                        <td id="cenaS" style="padding-top: 16px;">0,00zł</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a  href="PilkaM.html"><img src="images/pilkaMmini.png" width="50" height="50" ></a>Piłka M</th>
+                        <td style="padding-top: 16px;">                          
+                          <div class="btn-group btn-group-sm" id="usunM"><button type="submit" class="btn btn-primary">-</button></div> <p id="iloscM">0</p>
+                          <div class="btn-group btn-group-sm" id="dodajM">
+                            <button type="submit" class="btn btn-primary">+</button>
+                           </div> 
+                          </td>
+                        <td id="cenaM" style="padding-top: 16px;">0,00zł</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a  href="PilkaL.html"><img src="images/pilkaLmini.png" width="50" height="50"></a>Piłka L</th>
+
+                        <td style="padding-top: 16px;">
+                          <div class="btn-group btn-group-sm" id="usunL"><button type="submit" class="btn btn-primary">-</button></div> <p id="iloscL">0</p>
+                          <div class="btn-group btn-group-sm" id="dodajL">
+                            <button type="submit" class="btn btn-primary">+</button>
+                           </div> 
+                          </td>
+                        <td id="cenaL" style="padding-top: 16px;">0,00zł</td>
+                      </tr>
+                </tbody>
+              </table>
+              <h2 id="cenaRazem">Razem: XX zł</h2>
+              <button type="button" class="btn btn-primary btn-lg buttonZamow" id="buttonZamow">Złóż zamówienie</button>
+
+        </main>
+        <footer>
+
+           
+          </footer>
+          <script src="javascript\skryptCart.js"></script>
+    </body>
+    </html>
