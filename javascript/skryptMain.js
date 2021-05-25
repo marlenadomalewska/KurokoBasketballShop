@@ -16,17 +16,6 @@ if(window.localStorage.length == 0){
 (function(){
     var logowanie = document.querySelector("#logowanie");
     var iloscKoszyk = document.querySelector("#iloscKoszyk");
-    // if(localStorage.getItem("isLoggedIn") == true){
-    //     logowanie.innerText = "Witaj, " + localStorage.getItem("Login");
-
-    //     logowanie.addEventListener('click', function(){
-    //         //location.href = "Login.html"
-    //         localStorage.setItem("isLoggedIn", false);
-
-    //     });
-    // }
-
-    // iloscKoszyk.innerText = "Koszyk: "+ localStorage.getItem(Cart);
 
     window.addEventListener('DOMContentLoaded', function(){
         
@@ -36,7 +25,7 @@ if(window.localStorage.length == 0){
             logowanie.innerText = "Witaj, " + localStorage.getItem("Login")+". Kliknij, aby wylogować";
     
             logowanie.addEventListener('click', function(){
-                //location.href = "Login.html"
+                
                 localStorage.setItem("isLoggedIn", false);
     
             });

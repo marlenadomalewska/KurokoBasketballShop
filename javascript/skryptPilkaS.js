@@ -34,7 +34,7 @@ if(window.localStorage.length == 0){
 
     
     var magazynS = document.querySelector("#magazynS");
-    //magazynS.innerText = "Stan magazynowy: " + localStorage.getItem("magazynS");
+
 
     window.addEventListener('DOMContentLoaded', function(){
         magazynS.innerText = "Stan magazynowy: " + localStorage.getItem("magazynS");
@@ -44,7 +44,7 @@ if(window.localStorage.length == 0){
             logowanie.innerText = "Witaj, " + localStorage.getItem("Login")+". Kliknij, aby wylogować";
     
             logowanie.addEventListener('click', function(){
-                //location.href = "Login.html"
+                
                 localStorage.setItem("isLoggedIn", false);
     
             });

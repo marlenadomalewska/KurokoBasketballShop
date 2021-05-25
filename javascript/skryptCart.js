@@ -45,7 +45,7 @@ if(window.localStorage.length == 0){
         cenaM.innerText = (localStorage.getItem("CartM")*wartoscM).toFixed(2) + "zł";
         cenaL.innerText = (localStorage.getItem("CartL")*wartoscL).toFixed(2) + "zł";
         var cenaa = (localStorage.getItem("CartS")*wartoscS) + (localStorage.getItem("CartM")*wartoscM) + (localStorage.getItem("CartL")*wartoscL);
-        //cenaRazem.innerText = "Razem: " + ( (localStorage.getItem("CartS")*wartoscS) + (localStorage.getItem("CartM")*wartoscM) + (localStorage.getItem("CartL")*wartoscL) ).toFixed(2) + "zł";
+        
         cenaRazem.innerText = "Razem: " + cenaa.toFixed(2)+"zł";
     }
 
@@ -146,7 +146,7 @@ if(window.localStorage.length == 0){
             logowanie.innerText = "Witaj, " + localStorage.getItem("Login")+". Kliknij, aby wylogować";
     
             logowanie.addEventListener('click', function(){
-                //location.href = "Login.html"
+                
                 localStorage.setItem("isLoggedIn", false);
     
             });

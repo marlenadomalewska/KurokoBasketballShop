@@ -43,7 +43,7 @@ if(window.localStorage.length == 0){
             logowanie.innerText = "Witaj, " + localStorage.getItem("Login")+". Kliknij, aby wylogować";
     
             logowanie.addEventListener('click', function(){
-                //location.href = "Login.html"
+              
                 localStorage.setItem("isLoggedIn", false);
     
             });
